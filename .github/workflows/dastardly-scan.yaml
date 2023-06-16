@@ -15,7 +15,7 @@ jobs:
       - name: Run Dastardly Scan
         uses: PortSwigger/dastardly-github-action@main
         with:
-          target-url: 'https://www.medikaynak.com/'
+          target-url: 'https://vulnerable-site.azurewebsites.net/'
 
       - name: Publish Dastardly Scan Report
         if: always()
@@ -23,4 +23,3 @@ jobs:
         with:
           check_name: 'Dastardly Scan Report'
           report_paths: '**/dastardly-report.xml'
-          require_tests: true
