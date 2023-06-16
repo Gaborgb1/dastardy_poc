@@ -15,7 +15,7 @@ jobs:
       - name: Run Dastardly Scan
         uses: PortSwigger/dastardly-github-action@main
         with:
-          target-url: 'https://fondazioneroche.it/'
+          target-url: 'https://www.medikaynak.com/'
 
       - name: Publish Dastardly Scan Report
         if: always()
